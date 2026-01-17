@@ -249,8 +249,14 @@
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
   .h-130 {
     height: calc(var(--spacing) * 130);
+  }
+  .h-140 {
+    height: calc(var(--spacing) * 140);
   }
   .h-150 {
     height: calc(var(--spacing) * 150);
@@ -260,6 +266,9 @@
   }
   .h-200 {
     height: calc(var(--spacing) * 200);
+  }
+  .h-\[231px\] {
+    height: 231px;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -401,6 +410,9 @@
   .bg-\[url\(\)\] {
     background-image: url();
   }
+  .bg-\[url\(bg\)\] {
+    background-image: url(bg);
+  }
   .bg-\[url\(bg1\.png\)\] {
     background-image: url(bg1.png);
   }
@@ -415,6 +427,9 @@
   }
   .bg-\[url\(bg4\.png\)\] {
     background-image: url(bg4.png);
+  }
+  .bg-\[url\(bg5\.png\)\] {
+    background-image: url(bg5.png);
   }
   .bg-cover {
     background-size: cover;
@@ -617,6 +632,11 @@
       height: calc(var(--spacing) * 120);
     }
   }
+  .md\:h-170 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 170);
+    }
+  }
   .md\:w-100 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 100);
@@ -777,6 +797,11 @@
       display: none;
     }
   }
+  .lg\:h-120 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 120);
+    }
+  }
   .lg\:h-150 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 150);
@@ -822,6 +847,11 @@
       width: calc(var(--spacing) * 110);
     }
   }
+  .lg\:w-120 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 120);
+    }
+  }
   .lg\:w-140 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 140);
@@ -865,6 +895,11 @@
   .lg\:flex-row-reverse {
     @media (width >= 64rem) {
       flex-direction: row-reverse;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
     }
   }
   .lg\:gap-0 {
@@ -940,6 +975,11 @@
   .lg\:text-\[30px\] {
     @media (width >= 64rem) {
       font-size: 30px;
+    }
+  }
+  .lg\:text-\[40px\] {
+    @media (width >= 64rem) {
+      font-size: 40px;
     }
   }
   .lg\:text-\[50px\] {
