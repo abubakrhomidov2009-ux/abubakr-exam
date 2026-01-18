@@ -275,6 +275,9 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
@@ -495,6 +498,12 @@
   .bg-\[blue\] {
     background-color: blue;
   }
+  .bg-\[url9\] {
+    background-color: url9;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -536,6 +545,9 @@
   }
   .bg-\[url\(bg8\.png\)\] {
     background-image: url(bg8.png);
+  }
+  .bg-\[url\(bg9\.png\)\] {
+    background-image: url(bg9.png);
   }
   .bg-cover {
     background-size: cover;
@@ -627,6 +639,12 @@
   .text-start {
     text-align: start;
   }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
@@ -673,6 +691,9 @@
   }
   .text-\[\#bdbbbba2\] {
     color: #bdbbbba2;
+  }
+  .text-\[13\] {
+    color: 13;
   }
   .text-\[gray\] {
     color: gray;
@@ -822,6 +843,11 @@
       width: calc(var(--spacing) * 50);
     }
   }
+  .md\:w-58 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 58);
+    }
+  }
   .md\:w-60 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 60);
@@ -952,9 +978,24 @@
       text-align: center;
     }
   }
+  .md\:text-\[5px\] {
+    @media (width >= 48rem) {
+      font-size: 5px;
+    }
+  }
   .md\:text-\[10px\] {
     @media (width >= 48rem) {
       font-size: 10px;
+    }
+  }
+  .md\:text-\[13px\] {
+    @media (width >= 48rem) {
+      font-size: 13px;
+    }
+  }
+  .md\:text-\[15px\] {
+    @media (width >= 48rem) {
+      font-size: 15px;
     }
   }
   .md\:text-\[20px\] {
@@ -970,6 +1011,11 @@
   .md\:text-\[40px\] {
     @media (width >= 48rem) {
       font-size: 40px;
+    }
+  }
+  .md\:text-\[10\] {
+    @media (width >= 48rem) {
+      color: 10;
     }
   }
   .lg\:m-0 {
@@ -1232,6 +1278,11 @@
       font-size: 10px;
     }
   }
+  .lg\:text-\[20px\] {
+    @media (width >= 64rem) {
+      font-size: 20px;
+    }
+  }
   .lg\:text-\[40px\] {
     @media (width >= 64rem) {
       font-size: 40px;
@@ -1240,6 +1291,16 @@
   .lg\:text-\[50px\] {
     @media (width >= 64rem) {
       font-size: 50px;
+    }
+  }
+  .lg\:text-\[20\] {
+    @media (width >= 64rem) {
+      color: 20;
+    }
+  }
+  .lg\:text-\[px\] {
+    @media (width >= 64rem) {
+      color: px;
     }
   }
   .lg\:not-visited\:w-fit {
